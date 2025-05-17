@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sônia Eventos - Decoração exclusiva para casamentos, aniversários, eventos corporativos e muito mais. Transforme seu evento em uma experiência inesquecível.">
+    <meta name="keywords" content="decoração de eventos, casamentos, aniversários, eventos corporativos, chá de bebê, formaturas, festas temáticas">
+    <meta name="author" content="Sônia Eventos">
+    <title>Sônia Eventos - Decoração de Eventos</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-gray-800 logo">
+                        <span class="text-rose-300">Sônia</span> Eventos
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 focus:outline-none" aria-label="Abrir menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8" aria-label="Menu principal">
+                    <a href="#home" class="text-gray-800 hover:text-rose-300 transition">Início</a>
+                    <a href="#services" class="text-gray-800 hover:text-rose-300 transition">Serviços</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-rose-300 transition">Galeria</a>
+                    <a href="#about" class="text-gray-800 hover:text-rose-300 transition">Sobre</a>
+                    <a href="#contact" class="text-gray-800 hover:text-rose-300 transition">Contato</a>
+                    <a href="#contact" class="bg-rose-300 text-white px-4 py-2 rounded-full hover:bg-rose-400 transition">Orçamento</a>
+                </nav>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4" aria-label="Menu mobile">
+                <a href="#home" class="block py-2 text-gray-800 hover:text-rose-300 transition">Início</a>
+                <a href="#services" class="block py-2 text-gray-800 hover:text-rose-300 transition">Serviços</a>
+                <a href="#gallery" class="block py-2 text-gray-800 hover:text-rose-300 transition">Galeria</a>
+                <a href="#about" class="block py-2 text-gray-800 hover:text-rose-300 transition">Sobre</a>
+                <a href="#contact" class="block py-2 text-gray-800 hover:text-rose-300 transition">Contato</a>
+                <a href="#contact" class="block mt-2 bg-rose-300 text-white px-4 py-2 rounded-full text-center hover:bg-rose-400 transition">Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="title-font text-4xl md:text-6xl font-bold mb-6 fade-in">Transformando sonhos em realidade</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto fade-in">Criamos experiências memoráveis com decorações exclusivas para seu evento especial</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 fade-in">
+                <a href="#contact" class="btn-primary px-8 py-3 rounded-full font-semibold">Solicitar Orçamento</a>
+                <a href="#gallery" class="bg-white text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Ver Portfólio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <div class="w-24 h-1 bg-rose-300 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Oferecemos soluções completas para tornar seu evento único e inesquecível</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 fade-in">
+                    <div class="text-rose-300 text-4xl mb-4">
+                        <i class="fas fa-glass-cheers" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-gray-800 mb-3">Casamentos</h3>
+                    <p class="text-gray-600">Decoração completa para o seu grande dia, desde a cerimônia até a recepção, criando um ambiente romântico e sofisticado.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 fade-in">
+                    <div class="text-rose-300 text-4xl mb-4">
+                        <i class="fas fa-birthday-cake" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-gray-800 mb-3">Aniversários</h3>
+                    <p class="text-gray-600">Temas criativos e personalizados para todas as idades, transformando sua festa em uma experiência mágica.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 fade-in">
+                    <div class="text-rose-300 text-4xl mb-4">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-gray-800 mb-3">Eventos Corporativos</h3>
+                    <p class="text-gray-600">Ambientes profissionais e elegantes para seus eventos de negócios, alinhados à identidade da sua marca.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 fade-in">
+                    <div class="text-rose-300 text-4xl mb-4">
+                        <i class="fas fa-baby" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-gray-800 mb-3">Chá de Bebê</h3>
+                    <p class="text-gray-600">Decorações delicadas e temáticas para celebrar a chegada do novo membro da família.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 fade-in">
+                    <div class="text-rose-300 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-gray-800 mb-3">Formaturas</h3>
+                    <p class="text-gray-600">Celebre essa conquista importante com uma decoração que reflete sua personalidade e estilo.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 fade-in">
+                    <div class="text-rose-300 text-4xl mb-4">
+                        <i class="fas fa-umbrella-beach" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-gray-800 mb-3">Eventos Temáticos</h3>
+                    <p class="text-gray-600">Desde festas à fantasia até noites especiais, criamos ambientes imersivos para sua temática.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Trabalhos</h2>
+                <div class="w-24 h-1 bg-rose-300 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Alguns momentos especiais que tivemos o prazer de decorar</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215a31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Casamento decorado com arranjos em tons de marfim e dourado" class="w-full h-64 object-cover lazy-load" data-src="https://images.unsplash.com/photo-1519225421980-715cb0215a31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <div class="p-4 bg-white">
+                        <h3 class="title-font font-bold text-lg text-gray-800">Casamento Clássico</h3>
+                        <p class="text-gray-600">Decoração em tons de marfim e dourado</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Festa infantil com tema de floresta encantada" class="w-full h-64 object-cover lazy-load" data-src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <div class="p-4 bg-white">
+                        <h3 class="title-font font-bold text-lg text-gray-800">Festa Infantil</h3>
+                        <p class="text-gray-600">Tema floresta encantada</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Evento corporativo para lançamento de produto premium" class="w-full h-64 object-cover lazy-load" data-src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <div class="p-4 bg-white">
+                        <h3 class="title-font font-bold text-lg text-gray-800">Evento Corporativo</h3>
+                        <p class="text-gray-600">Lançamento de produto premium</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Chá de bebê com tema de ursinhos de pelúcia" class="w-full h-64 object-cover lazy-load" data-src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <div class="p-4 bg-white">
+                        <h3 class="title-font font-bold text-lg text-gray-800">Chá de Bebê</h3>
+                        <p class="text-gray-600">Tema ursinhos de pelúcia</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1533174075249-9d00c8a0c4a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Formatura com decoração elegante" class="w-full h-64 object-cover lazy-load" data-src="https://images.unsplash.com/photo-1533174075249-9d00c8a0c4a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <div class="p-4 bg-white">
+                        <h3 class="title-font font-bold text-lg text-gray-800">Formatura</h3>
+                        <p class="text-gray-600">Celebração de conclusão de curso</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                         alt="Festa temática dos anos 80" class="w-full h-64 object-cover lazy-load" data-src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80">
+                    <div class="p-4 bg-white">
+                        <h3 class="title-font font-bold text-lg text-gray-800">Festa Temática</h3>
+                        <p class="text-gray-600">Noite dos anos 80</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-rose-300 text-white px-6 py-3 rounded-full font-semibold hover:bg-rose-400 transition">Ver Mais Trabalhos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox para galeria -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" src="" alt="">
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 fade-in">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a05d044e00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80" 
+                         alt="Sônia - Decoradora de Eventos" class="rounded-lg shadow-xl w-full lazy-load" data-src="https://images.unsplash.com/photo-1580489944761-15a05d044e00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80">
+                </div>
+                <div class="lg:w-1/2 fade-in">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-6">Sobre a Sônia Eventos</h2>
+                    <div class="w-24 h-1 bg-rose-300 mb-6"></div>
+                    <p class="text-gray-600 mb-4">Com mais de 15 anos de experiência no mercado de decoração de eventos, Sônia transformou sua paixão por criar ambientes especiais em uma carreira de sucesso.</p>
+                    <p class="text-gray-600 mb-6">Formada em Design de Interiores e com especialização em Eventos, ela lidera uma equipe de profissionais dedicados que compartilham da mesma visão: cada evento é único e merece uma abordagem personalizada.</p>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-rose-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-rose-300" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-gray-800 font-medium">Mais de 500 eventos realizados</p>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="bg-rose-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-rose-300" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-gray-800 font-medium">Atendimento personalizado</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-rose-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-rose-300" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-gray-800 font-medium">Materiais de alta qualidade</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-rose-300 text-white px-6 py-3 rounded-full font-semibold hover:bg-rose-400 transition">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">O Que Nossos Clientes Dizem</h2>
+                <div class="w-24 h-1 bg-rose-300 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2" aria-label="5 estrelas">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"A Sônia transformou nosso casamento em um conto de fadas. Cada detalhe foi pensado com tanto carinho e profissionalismo. Superou todas as nossas expectativas!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Foto de Ana Carolina" class="w-12 h-12 rounded-full mr-4 lazy-load" data-src="https://randomuser.me/api/portraits/women/32.jpg">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Carolina</h4>
+                            <p class="text-gray-600 text-sm">Noiva</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2" aria-label="5 estrelas">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Contratamos a Sônia Eventos para o lançamento do nosso produto e ficamos impressionados com a atenção aos detalhes. O ambiente criado refletiu perfeitamente a identidade da nossa marca."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Foto de Ricardo Mendes" class="w-12 h-12 rounded-full mr-4 lazy-load" data-src="https://randomuser.me/api/portraits/men/45.jpg">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ricardo Mendes</h4>
+                            <p class="text-gray-600 text-sm">Diretor de Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2" aria-label="5 estrelas">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"O chá de bebê da minha filha foi um sonho realizado! A decoração delicada e os detalhes personalizados encantaram todos os convidados. Recomendo de olhos fechados!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de Fernanda Lima" class="w-12 h-12 rounded-full mr-4 lazy-load" data-src="https://randomuser.me/api/portraits/women/68.jpg">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Fernanda Lima</h4>
+                            <p class="text-gray-600 text-sm">Cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="w-24 h-1 bg-rose-300 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Estamos prontos para transformar seu evento em uma experiência inesquecível</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 fade-in">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                                <input type="text" id="name" name="name" class="form-control w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-rose-300" required aria-required="true">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="form-control w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-rose-300" required aria-required="true">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-rose-300" placeholder="(99) 99999-9999" required aria-required="true">
+                        </div>
+                        <div>
+                            <label for="event-type" class="block text-gray-700 mb-2">Tipo de Evento</label>
+                            <select id="event-type" name="event-type" class="form-control w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-rose-300" required aria-required="true">
+                                <option value="" disabled selected>Selecione o tipo de evento</option>
+                                <option value="casamento">Casamento</option>
+                                <option value="aniversario">Aniversário</option>
+                                <option value="corporativo">Evento Corporativo</option>
+                                <option value="cha-bebe">Chá de Bebê</option>
+                                <option value="formatura">Formatura</option>
+                                <option value="tematico">Evento Temático</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" class="form-control w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-rose-300" required aria-required="true"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-rose-300 text-white py-3 rounded-lg font-semibold hover:bg-rose-400 transition">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-12 fade-in">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <h3 class="title-font text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-rose-300 text-xl mr-4">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                    <p class="text-gray-600">Av. Paulista, 1000, Sala 301<br>Bela Vista, São Paulo - SP</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-rose-300 text-xl mr-4">
+                                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                    <p class="text-gray-600">(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-rose-300 text-xl mr-4">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                    <p class="text-gray-600">contato@soniaventos.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-rose-300 text-xl mr-4">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-600 hover:text-rose-300 transition" aria-label="Instagram">
+                                    <i class="fab fa-instagram text-2xl" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-rose-300 transition" aria-label="Facebook">
+                                    <i class="fab fa-facebook text-2xl" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-rose-300 transition" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest text-2xl" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-rose-300 transition" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp text-2xl" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-2xl font-bold mb-4 logo">
+                        <span class="text-rose-300">Sônia</span> Eventos
+                    </div>
+                    <p class="text-gray-400 max-w-md">Transformando sonhos em realidade com decorações exclusivas para eventos inesquecíveis.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Links Rápidos</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-rose-300 transition">Início</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-rose-300 transition">Serviços</a></li>
+                            <li><a href="#gallery" class="text-gray-400 hover:text-rose-300 transition">Galeria</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-rose-300 transition">Sobre</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-rose-300 transition">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Serviços</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#services" class="text-gray-400 hover:text-rose-300 transition">Casamentos</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-rose-300 transition">Aniversários</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-rose-300 transition">Eventos Corporativos</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-rose-300 transition">Chá de Bebê</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-rose-300 transition">Formaturas</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-span-2 md:col-span-1">
+                        <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                        <p class="text-gray-400 mb-4">Receba novidades e inspirações para seu evento</p>
+                        <form class="flex">
+                            <input type="email" placeholder="Seu email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full" aria-label="Email para newsletter">
+                            <button type="submit" class="bg-rose-300 px-4 py-2 rounded-r-lg hover:bg-rose-400 transition" aria-label="Inscrever-se">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Sônia Eventos. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-rose-300 transition" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-rose-300 transition" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-rose-300 transition" aria-label="Pinterest">
+                        <i class="fab fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-rose-300 transition" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
